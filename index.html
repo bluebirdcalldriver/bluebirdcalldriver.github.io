@@ -77,23 +77,72 @@
         </div>
     </section>
 
+    <!-- SERVICE AREAS SECTION -->
+    <section class="service-areas" id="service-areas">
+        <div class="container">
+            <h2>Our Service Areas</h2>
+            <p class="areas-intro">We proudly serve the following locations with professional driving services:</p>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <div class="area-icon">📍</div>
+                    <h3>Thodupuzha</h3>
+                    <p>Our home base and primary service area</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">📍</div>
+                    <h3>Muvatupuzha</h3>
+                    <p>Extended service coverage</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">📍</div>
+                    <h3>Kothamangalam</h3>
+                    <p>Professional driving available</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">📍</div>
+                    <h3>Pala</h3>
+                    <p>Reach us for your needs</p>
+                </div>
+            </div>
+            <p class="areas-note">📞 Need service in your area? <strong>Call us at 7510306223</strong> to confirm availability</p>
+        </div>
+    </section>
+
     <!-- REVIEWS SECTION -->
     <section class="reviews" id="reviews">
         <div class="container">
             <h2>Customer Reviews</h2>
             <div class="reviews-grid">
                 <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="star-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
                     <p class="review-text">"Excellent service! Driver arrived on time and was very professional. Highly recommended!"</p>
                     <p class="review-author">— Satisfied Customer, Thodupuzha</p>
                 </div>
                 <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="star-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
                     <p class="review-text">"Very convenient, affordable, and trustworthy. Best call driver service in the area!"</p>
                     <p class="review-author">— Happy Client</p>
                 </div>
                 <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="star-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
                     <p class="review-text">"Professional, punctual, and safe. I use Blue Bird regularly for my commute."</p>
                     <p class="review-author">— Regular User</p>
                 </div>
@@ -120,40 +169,94 @@
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Book Your Driver</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">📞</div>
-                        <h3>Phone</h3>
-                        <a href="tel:7510306223"><strong>7510306223</strong></a>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">💬</div>
-                        <h3>WhatsApp</h3>
-                        <a href="https://wa.me/917510306223"><strong>Chat on WhatsApp</strong></a>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">📧</div>
-                        <h3>Email</h3>
-                        <a href="mailto:hridhikhandrik9@gmail.com"><strong>hridhikhandrik9@gmail.com</strong></a>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">📍</div>
-                        <h3>Location</h3>
-                        <p><strong>Thodupuzha, Kerala</strong></p>
-                    </div>
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <h2>Ready to Book?</h2>
+                    <p>Quick and easy. Fill the form below or reach out directly.</p>
                 </div>
-                <form id="contactForm" class="contact-form">
-                    <h3>Request a Driver</h3>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="tel" name="phone" placeholder="Your Phone" required>
-                    <input type="text" name="pickup" placeholder="Pickup Location" required>
-                    <input type="text" name="destination" placeholder="Destination (Optional)">
-                    <input type="datetime-local" name="datetime" placeholder="Preferred Date & Time" required>
-                    <textarea name="message" placeholder="Special Requirements (Optional)" rows="3"></textarea>
-                    <button type="submit" class="btn btn-primary">Send Request</button>
-                </form>
+
+                <div class="contact-layout">
+                    <!-- Left: Main Form -->
+                    <form id="contactForm" class="contact-form-main">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" name="phone" placeholder="10-digit mobile number" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Pickup Location *</label>
+                                <input type="text" name="pickup" placeholder="Where should we pick you up?" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Destination (Optional)</label>
+                                <input type="text" name="destination" placeholder="Where are you going?">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Date & Time *</label>
+                            <input type="datetime-local" name="datetime" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Special Requirements (Optional)</label>
+                            <textarea name="message" placeholder="Any special needs? Let us know..." rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Book Now</button>
+
+                        <div class="caution-box">
+                            <p><strong>⚠️ Important:</strong> Service is confirmed only upon owner's approval. Please wait for confirmation from Hridhik before finalizing your plans.</p>
+                        </div>
+                    </form>
+
+                    <!-- Right: Quick Contact -->
+                    <aside class="contact-sidebar">
+                        <div class="quick-contact">
+                            <h3>Get in Touch</h3>
+                            <p>Prefer to call directly? Here are the fastest ways to reach us.</p>
+
+                            <div class="contact-methods">
+                                <a href="tel:7510306223" class="contact-method">
+                                    <div class="method-icon">📞</div>
+                                    <div class="method-text">
+                                        <strong>Call Now</strong>
+                                        <span>7510306223</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://wa.me/917510306223" class="contact-method whatsapp">
+                                    <div class="method-icon">💬</div>
+                                    <div class="method-text">
+                                        <strong>WhatsApp</strong>
+                                        <span>Chat with us</span>
+                                    </div>
+                                </a>
+
+                                <a href="mailto:hridhikhandrik9@gmail.com" class="contact-method">
+                                    <div class="method-icon">📧</div>
+                                    <div class="method-text">
+                                        <strong>Email</strong>
+                                        <span>hridhikhandrik9@gmail.com</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="availability-info">
+                                <h4>Service Hours</h4>
+                                <p><strong>24/7 Available</strong> - We're here whenever you need us</p>
+                                <h4>Service Area</h4>
+                                <p>Thodupuzha, Muvatupuzha, Kothamangalam, Pala & nearby areas</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
     </section>
