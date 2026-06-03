@@ -49,62 +49,59 @@
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
+    <!-- SERVICES & COVERAGE SECTION -->
     <section class="services" id="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🚗</div>
-                    <h3>Daily Driver</h3>
-                    <p>Perfect for single-day needs, events, or emergencies. Flexible hourly rates available.</p>
-                    <p class="price">Starting from ₹X/hour</p>
+            <h2>Services & Coverage</h2>
+            
+            <div class="services-wrapper">
+                <!-- Service Types -->
+                <div class="services-part">
+                    <h3>Our Service Options</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <h4>Daily Driver</h4>
+                            <p>On-demand service for single-day needs, events, or emergencies.</p>
+                            <span class="price">Hourly rates available</span>
+                        </div>
+                        <div class="service-card">
+                            <h4>Weekly Package</h4>
+                            <p>Regular weekly driving support with consistent scheduling.</p>
+                            <span class="price">Special rates available</span>
+                        </div>
+                        <div class="service-card">
+                            <h4>Monthly Subscription</h4>
+                            <p>Long-term service with priority scheduling and discounted rates.</p>
+                            <span class="price">Best value option</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📅</div>
-                    <h3>Weekly Package</h3>
-                    <p>Regular weekly driving support with consistent scheduling and special rates.</p>
-                    <p class="price">Special rates available</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3>Monthly Subscription</h3>
-                    <p>Long-term driving support with priority scheduling and discounted rates.</p>
-                    <p class="price">Best value option</p>
-                </div>
-            </div>
-            <p class="services-note">📞 Call <strong>7510306223</strong> for a personalized quote</p>
-        </div>
-    </section>
 
-    <!-- SERVICE AREAS SECTION -->
-    <section class="service-areas" id="service-areas">
-        <div class="container">
-            <h2>Our Service Areas</h2>
-            <p class="areas-intro">We proudly serve the following locations with professional driving services:</p>
-            <div class="areas-grid">
-                <div class="area-card">
-                    <div class="area-icon">📍</div>
-                    <h3>Thodupuzha</h3>
-                    <p>Our home base and primary service area</p>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">📍</div>
-                    <h3>Muvatupuzha</h3>
-                    <p>Extended service coverage</p>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">📍</div>
-                    <h3>Kothamangalam</h3>
-                    <p>Professional driving available</p>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">📍</div>
-                    <h3>Pala</h3>
-                    <p>Reach us for your needs</p>
+                <!-- Service Areas -->
+                <div class="coverage-part">
+                    <h3>Service Coverage Areas</h3>
+                    <div class="areas-list">
+                        <div class="area-item">
+                            <h4>Thodupuzha</h4>
+                            <p>Primary service base</p>
+                        </div>
+                        <div class="area-item">
+                            <h4>Muvatupuzha</h4>
+                            <p>Extended coverage</p>
+                        </div>
+                        <div class="area-item">
+                            <h4>Kothamangalam</h4>
+                            <p>Service available</p>
+                        </div>
+                        <div class="area-item">
+                            <h4>Pala</h4>
+                            <p>Service area</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p class="areas-note">📞 Need service in your area? <strong>Call us at 7510306223</strong> to confirm availability</p>
+            
+            <p class="services-note">Call 7510306223 for a personalized quote</p>
         </div>
     </section>
 
@@ -151,14 +148,27 @@
                 <h3>Share Your Experience</h3>
                 <form id="reviewForm" class="review-form">
                     <input type="text" name="name" placeholder="Your Name" required>
-                    <select name="rating" required>
-                        <option value="">Select Rating</option>
-                        <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
-                        <option value="4">⭐⭐⭐⭐ Good</option>
-                        <option value="3">⭐⭐⭐ Average</option>
-                        <option value="2">⭐⭐ Fair</option>
-                        <option value="1">⭐ Poor</option>
-                    </select>
+                    
+                    <div class="rating-input">
+                        <label>Your Rating</label>
+                        <div class="star-selector">
+                            <input type="radio" name="rating" value="5" id="star5">
+                            <label for="star5" class="star-label">★</label>
+                            
+                            <input type="radio" name="rating" value="4" id="star4">
+                            <label for="star4" class="star-label">★</label>
+                            
+                            <input type="radio" name="rating" value="3" id="star3">
+                            <label for="star3" class="star-label">★</label>
+                            
+                            <input type="radio" name="rating" value="2" id="star2">
+                            <label for="star2" class="star-label">★</label>
+                            
+                            <input type="radio" name="rating" value="1" id="star1">
+                            <label for="star1" class="star-label">★</label>
+                        </div>
+                    </div>
+                    
                     <textarea name="message" placeholder="Your review..." rows="4" required></textarea>
                     <button type="submit" class="btn btn-primary">Submit Review</button>
                 </form>

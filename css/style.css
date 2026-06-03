@@ -265,121 +265,112 @@ section h2::after {
     background: linear-gradient(135deg, #f8f9fa, #ffffff);
 }
 
+.services h2 {
+    color: var(--primary-blue);
+}
+
+.services h2::after {
+    background-color: var(--accent-gold);
+}
+
+.services-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+.services-part h3,
+.coverage-part h3 {
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .service-card {
     background-color: var(--white);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
+    border-left: 3px solid transparent;
     animation: fadeInUp 0.6s ease-out;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(11, 95, 165, 0.2);
-    border-top: 4px solid var(--accent-gold);
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(11, 95, 165, 0.12);
+    border-left-color: var(--accent-gold);
 }
 
-.service-icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    animation: bounce 2s infinite;
-}
-
-.service-card h3 {
-    font-size: 1.5rem;
+.service-card h4 {
     color: var(--primary-blue);
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .service-card p {
     color: var(--text-light);
-    margin-bottom: 15px;
-    line-height: 1.8;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
 }
 
 .price {
+    display: block;
     color: var(--accent-gold);
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.areas-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.area-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border-top: 2px solid transparent;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.area-item:hover {
+    box-shadow: 0 6px 20px rgba(11, 95, 165, 0.12);
+    border-top-color: var(--accent-gold);
+}
+
+.area-item h4 {
+    color: var(--primary-blue);
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.area-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .services-note {
     text-align: center;
     color: var(--text-light);
     font-size: 1.1rem;
-}
-
-/* ============================================
-   SERVICE AREAS SECTION
-   ============================================ */
-
-.service-areas {
-    background: linear-gradient(135deg, #ffffff, #f8f9fa);
-}
-
-.areas-intro {
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--text-light);
-    margin-bottom: 50px;
-    line-height: 1.8;
-}
-
-.areas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.area-card {
-    background-color: var(--white);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    text-align: center;
-    transition: var(--transition);
-    animation: fadeInUp 0.6s ease-out;
-    border-left: 4px solid transparent;
-}
-
-.area-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(11, 95, 165, 0.2);
-    border-left-color: var(--accent-gold);
-}
-
-.area-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    animation: bounce 2s infinite;
-}
-
-.area-card h3 {
-    font-size: 1.4rem;
-    color: var(--primary-blue);
-    margin-bottom: 10px;
-}
-
-.area-card p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-}
-
-.areas-note {
-    text-align: center;
-    color: var(--text-light);
-    font-size: 1rem;
-    font-weight: 500;
 }
 
 /* ============================================
@@ -488,6 +479,51 @@ section h2::after {
     color: var(--white);
     font-size: 1rem;
     transition: var(--transition);
+}
+
+/* ============================================
+   STAR RATING INPUT
+   ============================================ */
+
+.rating-input {
+    margin-bottom: 20px;
+}
+
+.rating-input label {
+    display: block;
+    color: var(--white);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.star-selector {
+    display: flex;
+    gap: 8px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.star-selector input {
+    display: none;
+}
+
+.star-label {
+    font-size: 2rem;
+    color: rgba(247, 196, 0, 0.4);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.star-selector input:hover ~ .star-label,
+.star-label:hover {
+    color: var(--accent-gold);
+    transform: scale(1.2);
+}
+
+.star-selector input:checked ~ .star-label,
+.star-selector input:checked ~ .star-label ~ .star-label {
+    color: var(--accent-gold);
+    text-shadow: 0 0 5px rgba(247, 196, 0, 0.8);
 }
 
 .review-form input::placeholder,
@@ -946,6 +982,11 @@ section h2::after {
     .about-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .services-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .contact-layout {
